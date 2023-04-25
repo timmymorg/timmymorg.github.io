@@ -2,71 +2,172 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - TimmyMorgan</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Timmy Morgan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="audioplayer.css">
+  <link rel="stylesheet" href="contact-form.css">
+  <link rel='stylesheet' href='https://cdn.plyr.io/3.6.2/plyr.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div class="nav-container">
   <div class="nav-bar">
-    <div class="artist-name">Artist Name</div>
+    <div class="artist-name"></div>
     <ul class="nav-list">
-      <li><a href="#demo">Demo</a></li>
+      <li><a href="#demos">Demos</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#clients">Clients</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-  <div class="logo-container">
-    <img src="path/to/logo.png" alt="Logo" class="logo-img">
-  </div>
+  
 </div>
 
-<div id="demo" class="section">
-  <!-- content for demo section goes here -->
+<div class="logo-container">
+  <img src="./img/timmy-logo.jpeg" alt="Logo" class="logo-img" style="width: 30%;">
 </div>
 
+<h1 class="h1">Demos</h1>
+<div id="demos" class="section">
+
+
+  <div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                </div>
+                <div id="tracks">
+            
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+
+</div>
+
+<h1>About</h1>
 <div id="about" class="section">
   <div class="about-container">
-    <img src="path/to/profile-image.png" alt="Profile Image" class="profile-img">
-    <div class="lorem-ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend neque quis facilisis euismod. Integer bibendum purus id est gravida, sit amet ultrices magna vulputate. Nunc id semper velit, sit amet cursus arcu. Morbi vel nibh libero.</div>
+    <img src="./img/timmy-profile.png" alt="Profile Image" class="profile-img">
+    <div class="lorem-ipsum">If you've found yourself saying, "Let's hire John Krasinski!...Ohhh right, we can't afford John Krasinski" - then Timmy Morgan is your guy. Timmy's 15+ years in VO and improv comedy have given him a natural ability to bring a relatable, fun, conversational, almost spontaneous tone to his read, not unlike John K. His voice can also naturally fit within more professional reads and heart-felt anthemic reads. His specialty in characters/impersonations also gives him a range that can meet other needs, whether it be a suave Englishman, a gritty gangster, a salt-of-the-earth Texan, a grumpy Larry David-like turtle, or a character that sounds suspiciously like Sir Michael Caine. In short, Timmy is versatile and will get you the read you want and maybe even give you a read you didn't know you wanted!</div>
   </div>
 </div>
 
+<h1>Clients</h1>
 <div id="clients" class="section">
   <div class="client-container">
-    <img src="path/to/client-image.png" alt="Client Image" class="client-img">
+    <img src="./img/timmy-clients.png" alt="Client Image" class="client-img">
   </div>
 </div>
 
+<h1>Socials</h1>
 <div id="socials" class="section">
   <div class="socials-container">
-    <a href="https://www.tiktok.com/"><img src="path/to/tiktok.png" alt="Tik Tok" class="social-img"></a>
-    <a href="https://www.instagram.com/"><img src="path/to/instagram.png" alt="Instagram" class="social-img"></a>
-    <a href="https://twitter.com/"><img src="path/to/twitter.png" alt="Twitter" class="social-img"></a>
-    <a href="https://www.youtube.com/"><img src="path/to/youtube.png" alt="YouTube" class="social-img"></a>
+    <a href=""><img src="./img/tik-tok.png" alt="Tik Tok" class="social-img"></a>
+    <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Instagram" class="social-img"></a>
+    <a href="https://twitter.com/"><img src="./img/twitter.png" alt="Twitter" class="social-img"></a>
+    <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="YouTube" class="social-img"></a>
   </div>
 </div>
 
-<div id="contact" class="section">
-  <div class="contact-container">
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</div>
+<h1>Contact</h1>
 
-<div class="contact-info">
-  <a href="tel:123-456-7890">123-456-7890</a> | <a href="mailto:info@example.com">info@example.com</a>
-</div>
-<!-- partial -->
+
+
+
+<div id="contact" class="test">
+  <div class="contact-info">
+    <a href="tel:818-659-5038">818.659.5038</a> | <a href="mailto:timmymorganvo@gmail.com">timmymorganvo@gmail.com</a>
+  </div>
+ 
+    
+    <!-- CONTACT HTML -->
+
+    <div class="formbold-main-wrapper">
+      <!-- Author: FormBold Team -->
+      <!-- Learn More: https://formbold.com -->
+      <div class="formbold-form-wrapper">
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="formbold-mb-5">
+            <label for="name" class="formbold-form-label"> Full Name </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder=""
+              class="formbold-form-input"
+            />
+          </div>
+    
+          <div class="formbold-mb-5">
+            <label for="email" class="formbold-form-label"> Email Address </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=""
+              class="formbold-form-input"
+            />
+          </div>
+    
+          <div class="formbold-mb-5">
+            <label for="subject" class="formbold-form-label"> Subject </label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder=""
+              class="formbold-form-input"
+            />
+          </div>
+    
+          <div class="formbold-mb-5">
+            <label for="message" class="formbold-form-label"> Message </label>
+            <textarea
+              rows="6"
+              name="message"
+              id="message"
+              placeholder=""
+              class="formbold-form-input"
+            ></textarea>
+          </div>
+    
+          <div>
+            <button class="formbold-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+<!-- END -->
+
   
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script  src="audioplayer.js"></script>
+<script src="get-demo-category.js"></script>
+
 </body>
+
+
+
+
 </html>
