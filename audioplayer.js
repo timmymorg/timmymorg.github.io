@@ -1,7 +1,9 @@
 
-let user = 'nathanpuls';
-      
-const apiUrl = `https://linksaw.com/version-test/api/1.1/obj/vob-audio?constraints=[{"key":"audio-username","constraint_type":"equals","value":"${user}"}]`;
+let user = 'timmymorgan';
+  
+const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio`;
+
+//const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio?constraints=[{"key":"audio-username","constraint_type":"equals","value":"${user}"}]`;
 
 //myUidElement.innerHTML = myUid;
 
@@ -64,8 +66,9 @@ fetch(apiUrl)
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/e64c7cf3-7899-47db-8cc9-60d9179de0dd_NarrationNathanPulsVoiceOvermp3"
                 }, {
                     "track": 4,
-                    "name": "",
+                    "name": getaudio[3].category,
                     "duration": "",
+                    "file": getaudio[3].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/d0b3077f-16aa-4b60-9c94-c73c2fcf88e2_AnimationNathanPulsVoiceOvermp3"
                 }],
                 buildPlaylist = $.each(tracks, function(key, value) {
