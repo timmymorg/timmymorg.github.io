@@ -1,3 +1,5 @@
+
+
 .navbar .nav-link {
   color: #589444;
   font-size: 0.4rem;
@@ -5,7 +7,7 @@
 
 @media (min-width: 576px) {
   .navbar .nav-link {
-    font-size: 0.8rem;
+    font-size: 0.4rem;
   }
 }
 
@@ -17,13 +19,28 @@
 
 @media (min-width: 992px) {
   .navbar .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 
 @media (min-width: 1200px) {
   .navbar .nav-link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+}
+/* 
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+} */
+
+@media (min-width: 576px) {
+  .timmy-square-logo  {
+    width: 40px;
   }
 }
 
@@ -79,7 +96,7 @@
   /* #00b3ff OLD AUDIOPLAYER COLOR */
 
   .nav-pills.timmy-green {
-    font-weight: bold;
+    font-weight: 500;
   }
   
   .image-container {
@@ -154,18 +171,9 @@
     .contact-info {
       display: flex;
       align-items: center;
+      text-align: center;
     }
     
-    .contact-info button {
-      margin-right: 10px;
-    }
-    
-    .contact-info a {
-      display: block;
-      margin-top: 5px;
-    }
-    
-    .contact-info i {
-      margin-right: 5px;
-    }
-    
+ .icon-text {
+  margin-right: 20px;
+ }
