@@ -177,7 +177,8 @@ top:0;
 .plSel,
 .plSel:hover {
     /*playing color bm*/
-background-color:rgba(62, 179, 254, 0.1);
+/* background-color:rgba(62, 179, 254, 0.1); */
+background-color: #e8f3e4;
 color:#000000;
 cursor:default !important;
 }
