@@ -2,12 +2,24 @@
 
 .navbar .nav-link {
   color: #589444;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
+  padding-top: 0rem;
+}
+.border {
+  border: 0px;
+}
+.navbar-nav li {
+  padding: 0px 0px;
+}
+
+#header-nav a {
+	color: #FFF;
+  margin-right: -0.6rem; /* Space Between Items */
 }
 
 @media (min-width: 576px) {
   .navbar .nav-link {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -25,7 +37,7 @@
 
 @media (min-width: 1200px) {
   .navbar .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 /* 
@@ -96,7 +108,7 @@
   /* #00b3ff OLD AUDIOPLAYER COLOR */
 
   .nav-pills.timmy-green {
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .image-container {
