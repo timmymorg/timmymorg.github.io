@@ -81,6 +81,12 @@
   .image-container {
     overflow: hidden;
   }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
   
   .video-wrap {
     position: relative;
@@ -98,6 +104,8 @@
         width: 100%;
         height: 100%;
         max-height: 315px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .contact-info {
