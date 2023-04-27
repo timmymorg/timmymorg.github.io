@@ -2,6 +2,11 @@
     color: #589444;
     font-size: 0.8rem;
   }
+
+  .img-fluid-nate {
+    max-width: 80%;
+    height: auto;
+}
   
   .timmy-green .active a,
   .timmy-green .active a:hover {
