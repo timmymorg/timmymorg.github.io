@@ -1,6 +1,12 @@
 
-let user = 'timmymorgan';
-  
+//let user = 'timmymorgan';
+  var commercialDemo = 'https://sayingthings.s3.us-east-1.amazonaws.com/timmymorgan-audio/b4890ba8-73d8-4972-8dfc-6556d069b2e9_CommercialTimmyMorganVoiceOvermp3';
+  var animationDemo = 'https://sayingthings.s3.us-east-1.amazonaws.com/timmymorgan-audio/cacaea63-50a7-4a08-bdfc-0ed2d8350f22_AnimationTimmyMorganVoiceOvermp3';
+  var corporateDemo = 'https://sayingthings.s3.us-east-1.amazonaws.com/timmymorgan-audio/ac284d27-dff5-4447-8208-78b80f3444df_TimMorganELEARNINGDEMOmp3';
+  var britishDemo = 'https://sayingthings.s3.us-east-1.amazonaws.com/timmymorgan-audio/23802f90-2d3c-4c2d-aec9-37b9b6eab713_TimothyMorganBRITISHCOMMERCIALmp3';
+
+
+
 const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio`;
 
 //const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio?constraints=[{"key":"audio-username","constraint_type":"equals","value":"${user}"}]`;
@@ -50,25 +56,29 @@ fetch(apiUrl)
                     "track": 1,
                     "name": getaudio[0].category,
                     "duration": "",
-                    "file": getaudio[0].audioUrl
+                    "file": commercialDemo
+                   // "file": getaudio[0].audioUrl
                   //  "file": "https://sayingthings.s3.amazonaws.com/vo-audio/cfa8e725-8bb0-4e9b-864c-c67e5be8c28a_CommercialNathanPulsVoiceOvermp3"
                 }, {
                     "track": 2,
                     "name": getaudio[1].category,
                     "duration": "",
-                    "file": getaudio[1].audioUrl
+                    "file": animationDemo
+                   // "file": getaudio[1].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/68c5aec6-64a0-4ebe-bc12-d0c8789961b4_RadioNathanPulsVoiceOvermp3"
                 }, {    
                     "track": 3,
                     "name": getaudio[2].category,
                     "duration": "",
-                    "file": getaudio[2].audioUrl
+                    "file": corporateDemo
+                    //"file": getaudio[2].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/e64c7cf3-7899-47db-8cc9-60d9179de0dd_NarrationNathanPulsVoiceOvermp3"
                 }, {
                     "track": 4,
                     "name": getaudio[3].category,
                     "duration": "",
-                    "file": getaudio[3].audioUrl
+                    "file": britishDemo
+                    //"file": getaudio[3].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/d0b3077f-16aa-4b60-9c94-c73c2fcf88e2_AnimationNathanPulsVoiceOvermp3"
                 }],
                 buildPlaylist = $.each(tracks, function(key, value) {
