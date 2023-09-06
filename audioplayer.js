@@ -7,13 +7,13 @@
 
 
 
-const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio`;
+//const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio`;
 
 //const apiUrl = `https://linksaw.com/api/1.1/obj/timmy-morgan-audio?constraints=[{"key":"audio-username","constraint_type":"equals","value":"${user}"}]`;
 
 //myUidElement.innerHTML = myUid;
 
-let audioUrls = [];
+/* let audioUrls = [];
 
 fetch(apiUrl)
   .then(response => response.json())
@@ -27,7 +27,7 @@ fetch(apiUrl)
     const url1 = getaudio[0].audioUrl; // get the audio URL of the first audio element
     console.log(url1);
     const fun = getaudio[0].category;
-    console.log(fun);
+    console.log(fun); */
   
 
     jQuery(function ($) {
@@ -54,28 +54,28 @@ fetch(apiUrl)
                 extension = '',
                 tracks = [{
                     "track": 1,
-                    "name": getaudio[0].category,
+                    "name": "Commercial",
                     "duration": "",
                     "file": commercialDemo
                    // "file": getaudio[0].audioUrl
                   //  "file": "https://sayingthings.s3.amazonaws.com/vo-audio/cfa8e725-8bb0-4e9b-864c-c67e5be8c28a_CommercialNathanPulsVoiceOvermp3"
                 }, {
                     "track": 2,
-                    "name": getaudio[1].category,
+                    "name": "Animation",
                     "duration": "",
                     "file": animationDemo
                    // "file": getaudio[1].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/68c5aec6-64a0-4ebe-bc12-d0c8789961b4_RadioNathanPulsVoiceOvermp3"
                 }, {    
                     "track": 3,
-                    "name": getaudio[2].category,
+                    "name": "Corporate",
                     "duration": "",
                     "file": corporateDemo
                     //"file": getaudio[2].audioUrl
                     //"file": "https://sayingthings.s3.amazonaws.com/vo-audio/e64c7cf3-7899-47db-8cc9-60d9179de0dd_NarrationNathanPulsVoiceOvermp3"
                 }, {
                     "track": 4,
-                    "name": getaudio[3].category,
+                    "name": "British",
                     "duration": "",
                     "file": britishDemo
                     //"file": getaudio[3].audioUrl
@@ -176,8 +176,7 @@ fetch(apiUrl)
             $('.container').append('<p class="no-support">' + noSupport + '</p>');
         }
     });
-  })
-  .catch(error => console.error(error));
+ 
 
 
 
